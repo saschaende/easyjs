@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Loading external sources</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="../src/easy.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+<div class="page-header">
+<h1>Loading external sources</h1>
+</div>
+
+<a href="javascript:void(0);" onclick="javascript:easyjs.modal.show({width:'full',height:'full',title:'Test',ajax:'external/ajax.html'});" class="btn btn-default">ajax with much content full width</a>
+<a href="javascript:void(0);" onclick="javascript:easyjs.modal.show({width:'full',height:'full',title:'Test',ajax:'external/ajax.html'});" class="btn btn-default">ajax with much content autosize</a>
+<a href="javascript:void(0);" onclick="javascript:easyjs.modal.show({width:'300px',title:'Test',ajax:'external/ajax2.html'});" class="btn btn-default">ajax with some content</a>
+<a href="javascript:void(0);" onclick="javascript:easyjs.modal.show({width:'full',height:'full',iframescroll:'auto',title:'Test',iframe:'external/ajax.html'});" class="btn btn-default">iframe</a>
+<a href="javascript:void(0);" onclick="javascript:easyjs.modal.show({width:'full',height:'full',iframescroll:'auto',iframepadding:0,title:'Test',iframe:'external/ajax.html'});" class="btn btn-default">iframe no padding</a>
+<a href="javascript:void(0);" onclick="javascript:easyjs.modal.show({iframescroll:'no',title:'Test',iframe:'external/ajax2.html'});" class="btn btn-default">iframe no scrollbars</a>
+<a href="javascript:void(0);" onclick="javascript:easyjs.modal.show({title:'A koala',image:'Koala.jpg'});" class="btn btn-default">Image</a>
+
+
+</div>
+
+</body>
+</html>
