@@ -1,6 +1,7 @@
 EASY.JS version 2.3
 (C) 2016, Sascha Ende
 www.easyjs.de
+sponsored by maxcdn, www.maxcdn.com
 
 ______________________________________________________________________
 
