@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Buttons</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<script src="src/easy.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+<div class="page-header">
+<h1>Modal</h1>
+</div>
+
+
+<div class="list-group">
+  <a href="samples/Buttons.html" class="list-group-item">Buttons</a>
+  <a href="samples/Features.html" class="list-group-item">Features</a>
+  <a href="samples/Loading external sources.html" class="list-group-item">Loading external sources</a>
+  <a href="samples/Modal from a div container.html" class="list-group-item">Modal from a div container</a>
+  <a href="samples/Set defaults for all modals.html" class="list-group-item">Set defaults for all modals</a>
+  <a href="samples/Styling.html" class="list-group-item">Styling</a>
+</div>
+
+<pre class="javascript" style="font-family:monospace;"><span style="color: #006600; font-style: italic;">// Widget: Modal</span>
+easyjs.<span style="color: #660066;">modal</span>.<span style="color: #660066;">show</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#123;</span>
+		<span style="color: #006600; font-style: italic;">// title</span>
+        title			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// title text</span>
+        titlecolor		<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#666'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// font color</span>
+        bgtitle			<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#EEE'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// background color</span>
+        titleborder		<span style="color: #339933;">:</span> <span style="color: #3366CC;">'1px solid #CCC'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// bottom border</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// content</span>
+        content			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// content text</span>
+        contentcolor	<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#666'</span><span style="color: #339933;">,</span>  <span style="color: #006600; font-style: italic;">// font color</span>
+        bgcontent		<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#FFF'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// background color</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// close button</span>
+        close			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">,</span>
+        bgclose			<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#666'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// background color</span>
+        closecolor		<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#EEE'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// font color</span>
+        closeborder		<span style="color: #339933;">:</span> <span style="color: #3366CC;">'0px solid #CCC'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// border</span>
+        onbeforeclose	<span style="color: #339933;">:</span> <span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span><span style="color: #000066; font-weight: bold;">return</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">;</span><span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// executed before closing, return false if you dont want the modal closed</span>
+        onclose			<span style="color: #339933;">:</span> <span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#123;</span><span style="color: #009900;">&#125;</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// executed after the window was closed</span>
+&nbsp;
+        hoverbgclose	<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#CCC'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// hover background color</span>
+        hoverclosecolor	<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#000'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// hover font color</span>
+        closehoverborder<span style="color: #339933;">:</span> <span style="color: #3366CC;">'0px solid #CCC'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// hover border</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// iframe</span>
+        iframe			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// iframe path/url</span>
+        iframepadding	<span style="color: #339933;">:</span> <span style="color: #CC0000;">10</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// padding</span>
+        iframescroll	<span style="color: #339933;">:</span> <span style="color: #3366CC;">'no'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// scrolling</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// ajax</span>
+        ajax			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// ajax path/url</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// image</span>
+        image			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// image path/url</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// div</span>
+        container		<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// get container content, for example #modal</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// modal general</span>
+       	width			<span style="color: #339933;">:</span> <span style="color: #3366CC;">'auto'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// width (5px, full, auto)</span>
+    	height			<span style="color: #339933;">:</span> <span style="color: #3366CC;">'auto'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// height (5px, full, auto)</span>
+        border			<span style="color: #339933;">:</span> <span style="color: #3366CC;">'0px solid #CCC'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// border</span>
+        rounded			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// rounded</span>
+        borderradius	<span style="color: #339933;">:</span> <span style="color: #CC0000;">5</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// border radius</span>
+        shadow			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// shadow</span>
+        background		<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">true</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// background</span>
+        draggable		<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// draggable</span>
+        fade			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// fade</span>
+        escape			<span style="color: #339933;">:</span> <span style="color: #003366; font-weight: bold;">false</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// escape key</span>
+&nbsp;
+        <span style="color: #006600; font-style: italic;">// Buttons</span>
+        buttons			<span style="color: #339933;">:</span>	<span style="color: #003366; font-weight: bold;">null</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// buttons</span>
+        buttonsborder	<span style="color: #339933;">:</span> <span style="color: #3366CC;">'1px solid #CCC'</span><span style="color: #339933;">,</span> <span style="color: #006600; font-style: italic;">// bottom border</span>
+        buttonsbg		<span style="color: #339933;">:</span> <span style="color: #3366CC;">'#EEE'</span> <span style="color: #006600; font-style: italic;">// background</span>
+<span style="color: #009900;">&#125;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>
+<span style="color: #006600; font-style: italic;">// Close a modal</span>
+easyjs.<span style="color: #660066;">modal</span>.<span style="color: #660066;">close</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span></pre>
+  
+
+
+</div>
+
+</body>
+</html>
