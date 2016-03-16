@@ -6,7 +6,9 @@ ______________________________________________________________________
 
 The folks over at MaxCDN graciously provide CDN support for EASY.JS. Just use this EASY.JS CDN links.
 
-<script src="https://maxcdn.easyjs.de/2.4/easy.js" integrity="sha384-6y16sDFWS4abwxMVkszJ8N0Wotq7Dkg7NgXlMIxRT7lPKV5HrdJLcEMGgN8ocK+r" crossorigin="anonymous"></script>
+version 2.3:
+<script src="https://maxcdn.easyjs.de/2.3/easy.js" integrity="sha384-A6PpFWbqlPTXkzJfsOT2+LQ7kik0uwFut/MOM/2TyL1B0Yps+ziHs/LzFnN98pGq"crossorigin="anonymous"></script>
+
 ______________________________________________________________________
 
 CHANGELOG
@@ -15,6 +17,7 @@ ______________________________________________________________________
 2.4
 
 - tour
+- cookie helpers
 
 2.3
 
