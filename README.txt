@@ -1,17 +1,22 @@
-EASY.JS version 2.3
+EASY.JS version 2.4
 (C) 2016, Sascha Ende
 www.easyjs.de
 sponsored by maxcdn, www.maxcdn.com
 ______________________________________________________________________
 
-The folks over at MaxCDN graciously provide CDN support for EASY.JS. Just use this EASY.JS CDN link.
+The folks over at MaxCDN graciously provide CDN support for EASY.JS. Just use this EASY.JS CDN links.
 
+version 2.3:
 <script src="https://maxcdn.easyjs.de/2.3/easy.js" integrity="sha384-A6PpFWbqlPTXkzJfsOT2+LQ7kik0uwFut/MOM/2TyL1B0Yps+ziHs/LzFnN98pGq"crossorigin="anonymous"></script>
 
 ______________________________________________________________________
 
 CHANGELOG
 ______________________________________________________________________
+
+2.4
+
+- tour
 
 2.3
 
