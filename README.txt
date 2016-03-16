@@ -6,8 +6,7 @@ ______________________________________________________________________
 
 The folks over at MaxCDN graciously provide CDN support for EASY.JS. Just use this EASY.JS CDN links.
 
-version 2.3:
-<script src="https://maxcdn.easyjs.de/2.3/easy.js" integrity="sha384-A6PpFWbqlPTXkzJfsOT2+LQ7kik0uwFut/MOM/2TyL1B0Yps+ziHs/LzFnN98pGq"crossorigin="anonymous"></script>
+<script src="https://maxcdn.easyjs.de/2.4/easy.js" integrity="sha384-Q1tSFBGFs+MMFbSR8cqUIi8Qy7ISO0IyJbjijBYizcFy+p6Plohfs0BLEWRGMZuY" crossorigin="anonymous"></script>
 
 ______________________________________________________________________
 
