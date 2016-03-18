@@ -6,6 +6,8 @@ www.easyjs.de
 
 sponsored by maxcdn, www.maxcdn.com
 
+# HOW TO INCLUDE
+
 The folks over at MaxCDN graciously provide CDN support for EASY.JS. Just use this EASY.JS CDN links.
 
 ```
