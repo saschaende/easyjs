@@ -1,6 +1,9 @@
 EASY.JS version 2.4
+
 (C) 2016, Sascha Ende
+
 www.easyjs.de
+
 sponsored by maxcdn, www.maxcdn.com
 
 The folks over at MaxCDN graciously provide CDN support for EASY.JS. Just use this EASY.JS CDN links.
