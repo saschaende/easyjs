@@ -11,25 +11,25 @@ The folks over at MaxCDN graciously provide CDN support for EASY.JS. Just use th
 
 ## 2.4
 
-- tour
-- cookie helpers
+* tour
+* cookie helpers
 
 ## 2.3
 
-- popover/positioning
+* popover/positioning
 
 ## 2.2
 
-- horizontal/vertical menu
+* horizontal/vertical menu
 
 ## 2.1
 
-- tooltip
+* tooltip
 
 ## 2.0
 
-- mouse function
-- helpers
+* mouse function
+* helpers
 
 # LICENSE
 
