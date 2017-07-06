@@ -1,0 +1,282 @@
+
+#easyjs-contextmenu {
+	position: absolute;
+	background: #f1f1f1;
+	box-shadow: 5px 5px 5px #BDBDBD;	
+}
+
+#easyjs-contextmenu ul {
+	margin: 0;
+	padding: 0;	
+}
+
+#easyjs-contextmenu li {
+	list-style: none;
+	cursor: hand;
+	cursor: pointer;
+	position: relative;
+}
+
+#easyjs-contextmenu li:hover .easyjs-contextmenu-left, #easyjs-contextmenu li:hover .easyjs-contextmenu-right {
+	background: #ccc;
+}
+
+.easyjs-contextmenu-right {
+	position: relative;
+}
+#easyjs-contextmenu .easyjs-contextmenu-divider .easyjs-contextmenu-right {
+	border-top: 1px solid #ffffff;
+}
+
+#easyjs-contextmenu li .easyjs-contextmenu-left {
+	padding: 6px;
+	border-right: 1px solid #e2e3e3;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#easyjs-contextmenu li .easyjs-contextmenu-right {
+	padding: 6px;
+	display: inline-block;
+	border-left: 1px solid #ffffff;
+	box-sizing: border-box;
+}
+
+
+/**********************************************************
+TOUR
+**********************************************************/
+
+/* background */
+.easyjs-tour-bg {
+	display:none;
+	position:absolute;
+	background:#000;
+	opacity:0.4;
+}
+
+/* container */
+.easy-tour-container {
+	position: absolute;
+	box-shadow: 6px 6px 6px #555555;
+	min-width: 300px;
+	max-width: 500px;
+	color: #333333;
+	background:#FFF;
+	border-radius:5px;
+}
+
+/* title */
+.easy-tour-title {
+	background:#f7f7f7;
+	padding: 10px;
+	border-bottom:1px solid #ebebeb;
+	font-weight:bold;
+	font-size:110%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;	
+}
+
+/* content */
+.easy-tour-content {
+	padding: 10px;
+}
+
+/* footer */
+.easy-tour-footer {
+	padding: 10px;
+}
+
+/* arrow */
+.easy-tour-arrow {
+	position:absolute;
+	border-style: solid;	
+}
+
+/* bottom arrow */
+.easy-tour-arrow.bottom {
+	border-width: 0 7.5px 10px 7.5px;
+	border-color: transparent transparent #FFF transparent;
+	top: -9px;
+}
+
+/* top arrow */
+.easy-tour-arrow.top {
+	border-width: 10px 7.5px 0 7.5px;
+	border-color: #FFF transparent transparent transparent;
+	bottom: -9px;
+}
+
+/* buttons */
+.easy-tour-container .tourbtn {
+	color: #000;
+	padding: 5px;
+	text-decoration: none;
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	float: left;	
+}
+/* buttons hover effect */
+.easy-tour-container .tourbtn.active:hover {
+	background: #EEE;	
+}
+
+/* prev button */
+.easy-tour-container .tourbtn.prev {
+	border-right: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+/* next button */
+.easy-tour-container .tourbtn.next {
+	border-top-left-radius:0px;
+	border-bottom-left-radius:0px;	
+}
+
+/* end tour button */
+.easy-tour-container .tourbtn.end {
+	float: right;
+}
+
+/* disabled buttons */
+.easy-tour-container .tourbtn.disabled {
+	opacity: 0.5;
+}
+
+/**********************************************************
+FOLDABLE MENU
+**********************************************************/
+
+.easyjs-menu-horizontal ul, .easyjs-menu-vertical ul {list-style: none;}
+.easyjs-menu-horizontal > ul > li {	float:left;}
+.easyjs-menu-horizontal a, .easyjs-menu-vertical a {display: block;}
+.easyjs-menu-horizontal ul ul, .easyjs-menu-vertical ul ul {position: absolute;display:none;}
+.easyjs-menu-horizontal li, .easyjs-menu-vertical li {position: relative;white-space: nowrap;}
+
+/**********************************************************
+MODAL
+**********************************************************/
+
+/* background */
+.easyjs-modal-bg {
+	display:inline;
+	position:absolute;
+	left:0px;
+	background:#000;
+	opacity:0.5;	
+}
+
+/* modal general */
+.easyjs-modal-modal {
+	min-width:200px;
+	background: #FFF;
+	color: #666;
+	border: 0px solid #CCC;
+	border-radius: 5px;	
+}
+
+/* shadow with background */
+.easyjs-modal-modal.shadow-bg {box-shadow: 10px 10px 10px #555555;}
+
+/* shadow without background */
+.easyjs-modal-modal.shadow-nobg {box-shadow: 5px 5px 5px #BDBDBD;}
+
+/* title */
+.easyjs-modal-title {
+	padding: 10px;
+	font-weight:bold;
+	font-size:120%;
+	background: #EEE;
+	color: #000;	
+	border-bottom: 1px solid #CCC;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.easyjs-modal-footer {
+	background: #EEE;
+	border-top: 1px solid #CCC;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width:100%;
+	height:60px;
+	padding: 10px;
+	bottom:0px;
+	left:0px;
+	text-align:right;		
+}
+
+.easyjs-modal-footer button {
+	margin-right: 3px;
+}
+
+/* close button */
+.easyjs-modal-close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	text-decoration:none; 
+	display:block; 
+	width:24px; 
+	height:24px; 
+	border-radius: 3px; 
+	position:absolute; 
+	line-height: 24px; 
+	vertical-align:middle; 
+	font-size:16px; 
+	text-align:center;
+	background: #666;
+	color: #EEE;	
+	border: 0px solid #CCC;	
+}
+.easyjs-modal-close:hover {
+	text-decoration:none;
+	background: #CCC;
+	color: #000;	
+	border: 0px solid #CCC;		 
+}
+
+.easyjs-modal-ajax, .easyjs-modal-iframe, .easyjs-modal-image, .easyjs-modal-content, .easyjs-modal-containercontent {
+	padding: 10px;
+}
+
+.easyjs-modal-ajax, .easyjs-modal-iframe, .easyjs-modal-content, .easyjs-modal-containercontent {
+	overflow: auto;
+}
+
+/**********************************************************
+TOOLTIP
+**********************************************************/
+
+/* tooltip container */
+.easy-tooltip-container {
+	display:none; 
+	max-width:400px;
+	color:#FFF;
+	background:#000;
+	border-radius: 5px;
+	padding: 6px;
+	position: absolute;
+}
+
+/* arrow general */
+.easy-tooltip-arrow {
+	position:absolute;
+	border-style: solid;	
+}
+
+/* bottom arrow */
+.easy-tooltip-arrow.bottom {
+	border-width: 0 7.5px 10px 7.5px;
+	border-color: transparent transparent #000 transparent;
+	top: -9px;
+}
+
+/* top arrow */
+.easy-tooltip-arrow.top {
+	border-width: 10px 7.5px 0 7.5px;
+	border-color: #000 transparent transparent transparent;
+	bottom: -9px;
+}
